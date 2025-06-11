@@ -1,5 +1,5 @@
 export const emailHTMl = ({ email, VerifyId, VerificationCode, FullName }) => {
-  const verifyLink = `http://localhost:3333/user/verifyuserdetail/${email}/${VerifyId}/${VerificationCode}`;
+  const verifyLink = `https://backend2-h0tt.onrender.com/user/verifyuserdetail/${email}/${VerifyId}/${VerificationCode}`;
   const qrData = encodeURIComponent(verifyLink); // Encode the verifyLink for the QR code
   const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${qrData}&size=200x200`;
 
